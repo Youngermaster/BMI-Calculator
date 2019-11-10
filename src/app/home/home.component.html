@@ -6,9 +6,13 @@
         <br>
         <input type="number" [(ngModel)]="height">
         <br>
-        <strong>BMI:</strong> {{ weight / (height * height) }}.
+        <strong>BMI:</strong>
+            {{ weight / (height * height) }}
+        <br>
     </p>
+    <span (click)="determinateBmiLevel()"> BMI Level: </span> {{condition}}
 </div>
+
 
 <!--
 
@@ -19,9 +23,9 @@
 
 <div class="play-container">
     <p>
-        <input type="text" [(ngModel)]="fuck" placeholder="Type something">
+        <input type="text" [(ngModel)]="name" placeholder="Type something">
         <br>
-        <strong>You said:</strong> {{ fuck }}.
+        <strong>You said:</strong> {{ name }}.
     </p>
 </div>
 
